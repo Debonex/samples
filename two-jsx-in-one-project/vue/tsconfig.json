@@ -1,14 +1,8 @@
 {
+  "extends": "../tsconfig.base.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "emitDeclarationOnly": true,
-    "noImplicitAny": true,
-    "resolveJsonModule": true,
-    "declaration": true,
-    "moduleResolution": "Node",
-    "baseUrl": ".",
-    "allowSyntheticDefaultImports": true,
-    "jsx": "react-jsx",
-    "types": ["vue"]
-  }
+    "composite": true,
+    "types": ["@vue/runtime-dom"]
+  },
+  "include": ["./*.{ts,vue}"]
 }

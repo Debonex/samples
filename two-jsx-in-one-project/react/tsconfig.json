@@ -1,13 +1,7 @@
 {
+  "extends": "../tsconfig.base.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "emitDeclarationOnly": true,
-    "noImplicitAny": true,
-    "resolveJsonModule": true,
-    "declaration": true,
-    "moduleResolution": "Node",
-    "baseUrl": ".",
-    "allowSyntheticDefaultImports": true,
-    "jsx": "react-jsx"
-  }
+    "composite": true
+  },
+  "include": ["./*.{ts,tsx}"]
 }
